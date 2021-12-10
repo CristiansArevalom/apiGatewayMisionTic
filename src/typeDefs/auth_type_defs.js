@@ -59,7 +59,7 @@ type Mutation {
     signUpUser(userInput:SignUpInput): Tokens!
     login(credentials:LoginInput!): Tokens!
     refreshToken(token:Refresh!): Access!
-    createRol(Rol:RolInput!): Rol
+    createRol(Rol:RolInput!): Rol!
 }
 `;
 module.exports = authTypeDefs;

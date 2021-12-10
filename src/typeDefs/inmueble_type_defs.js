@@ -1,7 +1,7 @@
 const { gql } = require('apollo-server')
 
 const inmuebleTypeDefs = gql`
-    type Inmueble{
+    type Inmueble {
         id:String!
         propietario:String!
         ubicacionCiudad:String!
@@ -41,16 +41,16 @@ const inmuebleTypeDefs = gql`
     }
 
     extend type Query {
-        inmuebleById(idInmueble:String!):Inmueble
-        getInmuebles:[Inmueble]
-        inmueblesByOwner(username:String!):[Inmueble]
-        inmuebleByCity(city:String!):[Inmueble]
+        inmuebleById(idInmueble:String!):Inmueble!
+        getInmuebles:[Inmueble]!
+        inmueblesByOwner(username:String!):[Inmueble]!
+        inmuebleByCity(city:String!):[Inmueble]!
     }
     
     extend type Mutation {
-        createInmueble(Inmueble:InmuebleInput!):Inmueble
-        updateInmueble(Inmueble:InmuebleUpdate!):Inmueble
-        deleteInmueble(idInmueble:String!):String
+        createInmueble(Inmueble:InmuebleInput!): Inmueble!
+        updateInmueble(Inmueble:InmuebleUpdate!): Inmueble!
+        deleteInmueble(idInmueble:String!): String!
     }
 
 `;

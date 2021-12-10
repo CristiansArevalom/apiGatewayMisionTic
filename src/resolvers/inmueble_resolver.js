@@ -9,12 +9,13 @@ const inmuebleResolver = {
             else 
                 return null;
         },
-        getInmuebles: async (_,{dataSources}) =>{
-            console.log("Entro1");
+        getInmuebles: async (_, __, {dataSources}) =>{
             return await dataSources.inmuebleyReservaAPI.getInmuebles();
         },
         inmueblesByOwner: async (_,{username},{dataSources,userIdToken}) =>{ 
             usernameToken = (await dataSources.authAPI.getUser(userIdToken)).username //Trae a parir del token del usuario el username y valida si su token corresponde
+            console.log(username)
+            console.log(usernameToken)
             if (username = usernameToken)
                 return await dataSources.inmuebleyReservaAPI.inmueblesByOwner(username);
             else
