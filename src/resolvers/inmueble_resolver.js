@@ -14,8 +14,6 @@ const inmuebleResolver = {
         },
         inmueblesByOwner: async (_,{username},{dataSources,userIdToken}) =>{ 
             usernameToken = (await dataSources.authAPI.getUser(userIdToken)).username //Trae a parir del token del usuario el username y valida si su token corresponde
-            console.log(username)
-            console.log(usernameToken)
             if (username = usernameToken)
                 return await dataSources.inmuebleyReservaAPI.inmueblesByOwner(username);
             else
@@ -23,22 +21,34 @@ const inmuebleResolver = {
         },
         inmuebleByCity: async (_,{city},{dataSources}) =>{
             return await dataSources.inmuebleyReservaAPI.inmuebleByCity(city);
-        }
+        },
 
     },
     Mutation : {
-        createInmueble: async(_,{inmueble},{dataSources, userIdToken})=>{
+        createInmueble: async (_,{inmuebleInput},{dataSources, userIdToken})=>{
             usernameToken = (await dataSources.authAPI.getUser(userIdToken)).username //Trae a parir del token del usuario el username y valida si su token corresponde
-            if(inmueble.propietario ==usernameToken )
-                return await dataSources.inmuebleyReservaAPI.createInmueble(inmueble);
+            const inmuebleinput ={
+                propietario:inmuebleInput.propietario,
+                ubicacionCiudad:inmuebleInput.ubicacionCiudad,
+                ubicacionBarrio:inmuebleInput.ubicacionBarrio,
+                habitaciones:inmuebleInput.habitaciones,
+                numeroBanios:inmuebleInput.numeroBanios,
+                dimension:inmuebleInput.dimension,
+                tipoInmueble:inmuebleInput.tipoInmueble,
+                descripcion:inmuebleInput.descripcion,
+                precioDia:inmuebleInput.precioDia,
+                disponible:inmuebleInput.disponible
+            }
+            if(inmuebleInput.propietario == usernameToken )
+                return await dataSources.inmuebleyReservaAPI.createInmueble(inmuebleinput);
             else
                 return null;
         },
-        updateInmueble: async (_,{inmueble},{dataSources, userIdToken})=>{
+        updateInmueble: async (_,{inmuebleInput},{dataSources, userIdToken})=>{
             usernameToken = (await dataSources.authAPI.getUser(userIdToken)).username //Trae a parir del token del usuario el username y valida si su token corresponde
-            usernameInmueble = (await dataSources.inmuebleyReservaAPI.inmuebleById(inmueble.id)).propietario
+            usernameInmueble = (await dataSources.inmuebleyReservaAPI.inmuebleById(inmuebleInput.id)).propietario
             if(usernameToken = usernameInmueble)
-                return await dataSources.inmuebleyReservaAPI.updateInmueble(inmueble);
+                return await dataSources.inmuebleyReservaAPI.updateInmueble(inmuebleInput);
             else
                 return null;
         },

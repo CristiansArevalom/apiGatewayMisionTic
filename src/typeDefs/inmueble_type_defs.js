@@ -48,8 +48,8 @@ const inmuebleTypeDefs = gql`
     }
     
     extend type Mutation {
-        createInmueble(Inmueble:InmuebleInput!): Inmueble!
-        updateInmueble(Inmueble:InmuebleUpdate!): Inmueble!
+        createInmueble(inmuebleInput:InmuebleInput!): Inmueble!
+        updateInmueble(inmuebleInput:InmuebleUpdate!): Inmueble!
         deleteInmueble(idInmueble:String!): String!
     }
 

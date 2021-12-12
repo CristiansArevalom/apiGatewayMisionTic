@@ -8,7 +8,7 @@ class InmuebleyReservaAPI extends RESTDataSource {
     }
     async createInmueble(inmueble) {
         inmueble = new Object(JSON.parse(JSON.stringify(inmueble)));
-        return await this.post('/publicarEspacio', inmueble);
+        return await this.post('/publicarEspacio/', inmueble);
     }
     async inmuebleById(inmueblesID) {
         return await this.get(`/inmueblesID/${inmueblesID}`);
@@ -34,7 +34,6 @@ class InmuebleyReservaAPI extends RESTDataSource {
         return await this.post('/reservas', reserva);
     }
     async reservaByOwner(usernameArrendador) {
-        console.log("Entro2");
         return await this.get(`/misBalances/${usernameArrendador}`);
     }
     async reservaByUser(usernameArrendatario) {
@@ -46,10 +45,10 @@ class InmuebleyReservaAPI extends RESTDataSource {
        
     async updateReserva(reserva) {
         reserva = new Object(JSON.parse(JSON.stringify(reserva)));
-        return await this.put('/misReservas/update', reserva)
+        return await this.put('/misReservas/update', reserva);
     }
-    async deleteReserva(reservaId) {
-        return await this.delete(`/misReservas/delete/${reservaId}`);
+    async deleteReserva(id) {
+        return await this.delete(`/misReservas/delete/${id}`);
     }
 
 }

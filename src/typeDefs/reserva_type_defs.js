@@ -21,21 +21,20 @@ const reservaTypeDefs = gql `
 
     input ReservaUpdate{
         id:String!
-        idInmueble:String!
         fechaInicio:String!
         fechaFin:String!
     }
 
     extend type Query{
-        reservaByOwner(username:String!):[Reserva]
-        reservaByUser(username:String!):[Reserva]
-        reservaById(id:String!):Reserva
+        reservaByOwner(username:String!): [Reserva]!
+        reservaByUser(username:String!): [Reserva]!
+        reservaById(id:String!): Reserva!
     }
 
     extend type Mutation {
-        createReserva(Reserva:ReservaInput!):Reserva
-        updateReserva(Reserva:ReservaUpdate!):Reserva
-        deleteReserva(Reserva:String!):String
+        createReserva(reservaInput:ReservaInput!): Reserva!
+        updateReserva(reservaUpdate:ReservaUpdate!): Reserva!
+        deleteReserva(id:String!): String!
     }
 `;
 module.exports = reservaTypeDefs;
