@@ -1,0 +1,443 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(38, 204, 182)
+}
+
+section {
+    margin-top: 10px;
+    min-height: 100vh;
+}
+
+#nav2 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(234, 235, 233);
+    z-index: 100; 
+    
+}
+
+#nav2 li h1{
+    float: left;
+    margin-left: 25px;
+    font-family: cursive;
+    color:rgb(108, 110, 107);
+    font-weight: bold;
+}
+
+#nav2 a{
+    float: right;
+    margin-top: 25px;
+    margin-right: 50px;
+    color: rgb(108, 110, 107);
+    text-decoration: none;
+    font-family: cursive;
+    position: static;
+}
+
+#nav2 a:hover {
+    color: rgb(50, 51, 139);
+}
+
+a:hover,
+a:focus {
+  color: rgb(50, 51, 139);
+  border-bottom: 3px solid;
+}
+
+
+.container {
+    max-width: 1285px;
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    background-color: rgb(38, 204, 182);
+}
+
+
+.section1 {
+    width: 20%;
+    float: left;
+    padding: 3%;   
+    
+}
+
+.section1 h1{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.section2 {
+    margin-top: 50px;
+    width: 40%;
+    float: left;
+    padding: 3%;
+    font-family: sans-serif;
+    align-items: center;
+}
+
+.options2 lu {
+    float: right;
+    margin-right: 50px;
+
+}
+
+.map {
+    margin-top: 50px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid rgb(160, 158, 168); 
+}
+
+.section3 {
+    width: 20%;
+    float: left;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+.section4 {
+    width: 80%;
+    float: left;
+    padding: 3%;
+    
+}
+
+.styled-select1 { 
+    width: 260px; 
+    height: 34px; 
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    color: rgb(114, 109, 109);    
+    background: seashell;
+    border: 1px solid rgb(160, 158, 168); 
+}
+
+.styled-select2 { 
+    width: 260px; 
+    height: 34px; 
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: 90px;
+    border-radius: 5px 5px 5px 5px;
+    color: rgb(114, 109, 109);    
+    background: seashell;
+    border: 1px solid rgb(160, 158, 168); 
+}
+
+.styled-select3 { 
+    width: 260px; 
+    height: 34px; 
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: 180px;
+    border-radius: 5px 5px 5px 5px;
+    color: rgb(114, 109, 109);    
+    background: seashell;
+    border: 1px solid rgb(160, 158, 168); 
+}
+
+.styled-select4 { 
+    width: 260px; 
+    height: 34px; 
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+    top: 270px;
+    border-radius: 5px 5px 5px 5px;
+    color: rgb(114, 109, 109);    
+    background: seashell;
+    border: 1px solid rgb(160, 158, 168); 
+}
+form {
+    text-align: center;
+}
+
+.card{
+    border: 1px solid black;
+    height: 15rem;
+    width: 100%;
+    position: relative;
+    top: 25px;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 12px;
+}
+
+.button {
+    align-items: center;
+    background-color: #fca402; 
+    color: rgb(109, 108, 108);
+    border: 3px solid rgb(109, 108, 108);
+    border-radius: 5px 5px 5px 5px;
+    font-weight: bold;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    align-content: center;
+    
+}
+
+.button:hover {
+    background-color: #8f772a;
+    color: white;
+}
+
+.botones {
+    margin-left: 1000px;
+}
+
+.button2 {
+    margin-left: -300px;
+    margin-top: 25px;
+    align-items: center;
+    background-color: #494845; 
+    color: white;
+    border: 3px solid rgb(109, 108, 108);
+    border-radius: 5px 5px 5px 5px;
+    font-weight: bold;
+    padding: 16px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;   
+    
+}
+
+.button2:hover {
+    background-color: #0ee019;
+    color: white;
+}
+
+.registroandlog {
+    max-width: 1285px;
+    position: relative;
+    top: 20px;
+    margin-top: 5px;
+    margin: auto;
+    background-color: rgb(38, 204, 182);
+}
+
+.registro {
+    width: 40%;
+    background: #0ee019;
+    padding: 50px;
+    margin: auto;
+    margin-left: 50px;
+    margin-top: 25px;
+    border-radius: 10px;
+    font-family: cursive;
+    color: rgb(109, 108, 108);
+    float: left;    
+}
+
+.registro h1 {
+    text-align: center;
+    color: white;
+}
+
+.registro lu {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    
+}
+
+#nombres{
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(109, 108, 108);
+    font-family: cursive;
+    font-size: 18px;
+}
+
+#regb {
+    width: 190px;
+    height: 45px;
+    align-items: center;
+    background-color: #494845; 
+    color: white;
+    border: 3px solid rgb(109, 108, 108);
+    border-radius: 5px 5px 5px 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer; 
+    
+}  
+
+#regb:hover {
+    background-color: #0ee019;
+    color: white;
+}
+    
+.login {
+    width: 20%x;
+    padding: 30px;
+    margin: auto;
+    margin-top: 25px;
+    margin-left: 120px;
+    border-radius: 4px;
+    font-family: cursive;
+    color: rgb(109, 108, 108);
+    float: left;       
+}
+
+.login h1 {
+    text-align: center;
+    color: white;
+}
+
+.login lu {
+    display: flex;
+    justify-content: right;
+    width: 100%;     
+}
+
+#logb {
+    width: 190px;
+    height: 45px;
+    align-items: center;
+    background-color: #494845; 
+    color: white;
+    border: 3px solid rgb(109, 108, 108);
+    border-radius: 5px 5px 5px 5px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-left: 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;    
+} 
+
+#logb:hover {
+    background-color: #0ee019;
+    color: white;
+}
+
+#rec {
+    font-size: 15px;
+    color: rgb(73, 73, 68);
+    margin-top: 2px;
+}
+
+#rec:hover {
+    color: rgb(247, 242, 242);
+}
+
+.misbalances {
+    max-width: 1285px;
+    max-height: 50vh;
+    position: relative;
+    bottom: 400px;
+    margin-top: -5px;
+    margin: auto;
+    background-color: rgb(38, 204, 182);
+}
+
+.misbalances h1 {
+    margin: 50px;
+    padding: 3%;
+    font-family: cursive;
+    color: white; 
+}
+
+table {
+    width: 60%;
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+    font-family: cursive;
+    color: rgb(109, 108, 108);
+    position: relative;
+    left: 50px;
+}
+
+th, td{
+   
+    padding: 20px;
+}
+
+thead {
+    background-color: #ddd;
+    border-bottom: solid 3px black;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+tr:hover td{
+    background-color: #0ee019;
+    color: white;
+}
+
+.balances {
+    float: left;
+    position: relative;
+    left: 1250px;
+    bottom: 400px;
+}
+
+.buttonb {
+    margin-left: -300px;
+    margin-top: 25px;
+    align-items: center;
+    background-color: #0ee019; 
+    color: white;
+    border: 3px solid rgb(109, 108, 108);
+    border-radius: 5px 5px 5px 5px;
+    font-weight: bold;
+    padding: 16px 32px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;   
+    
+}
+
+.buttonb:hover {
+    background-color: #f5e506;
+    color: rgb(99, 96, 96);
+}
+
+

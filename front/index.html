@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale1">
+        <title>Nomnre de la app</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav id="nav2">
+            <li><h1>Nombre de la APP</h1></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="Cerrarsesion">Cerrar cesion</a></li>
+        </nav>
+        <section>
+        <div class="container">
+        <div class="section1">
+            <h1>Publicar espacio</h1>
+            <form action="/action_page.php">
+                <select class="styled-select1">
+                  <option value="inm">Tipo de inmueble</option>
+                  <option value="casa">Casa</option>
+                  <option value="apartamento">Apartamento</option>
+                  <option value="habitacion">Habitacion</option>
+                </select>
+              </form>
+              <form action="/action_page.php">
+                <select class="styled-select2">
+                  <option value="habitaciones">Numero de habitaciones</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </form>
+              <form action="/action_page.php">
+                <select class="styled-select3">
+                  <option value="habitaciones">Numero de Banos</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </form>
+              <form action="/action_page.php">
+                <select class="styled-select4">
+                  <option value="cocina">Incluye Cocina?</option>
+                  <option value="si">Si</option>
+                  <option value="no">No</option>
+                </select>
+              </form>
+        </div>
+        <div class="section2">
+            <form class="options2">
+                <lu><input  type="checkbox" id="opcion1" name="disponible">
+                <label for="disponible"> Disponible</label><br></lu>
+                <lu><input  type="checkbox" id="opcion2" name="nodisponible">
+                <label for="nodisponible">No Disponible</label><br></lu>
+                <lu><input  type="checkbox" id="opcion3" name="alquilado">
+                <label for="alquilado"> Alquilado</label><br></lu>
+             </form> 
+             <div class="card">
+                 <img id="img-preview">
+                 <div class="card-footer">
+                    <input type="file" id="img-uploader">
+                 </div>
+             </div>
+             <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89982.1074491898!2d-74.15834956162747!3d4.650174331783522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1638669509549!5m2!1ses!2sco" width="509" height="190" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+             </div>
+        </div>
+        <div class="section3">
+
+            <button class="button">Mis espacios</button>
+            <button class="button">Mis balances</button>
+
+        </div>
+
+        <div class="section4">
+            <textarea name="comentarios" rows="10" cols="110"> Notas adicionales</textarea>
+            <div class="botones">
+            <button class="button2 modificar">Modificar</button>
+            <button class="button2 guardar">Guardar</button>
+            <button class="button2 publicar">Publicar</button>
+            </div>
+        </div> 
+      </section>
+      <section>
+        <div class="registroandlog">
+        <div class="registro">
+          <h1>Registrarse ahora</h1>
+          <lu><input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre"></lu>
+          <lu><input class="controls" type="text" name="apellidos" id="nombres" placeholder="Ingrese su Apellido"></lu>
+          <lu><input class="controls" type="email" name="correo" id="nombres" placeholder="Ingrese su Correo"></lu>
+          <lu><input class="controls" type="password" name="contrasena" id="nombres" placeholder="Ingrese su Contrasena"></lu>
+         
+          <button id="regb">Quiero Arrendar</button>
+          <button id="regb">Quiero Hospedarme</button>
+           
+        </div>
+        <div class="login">
+          <h1>Ya tienes cuenta?</h1>
+          <lu><input type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre"></lu>
+          <lu><input type="password" name="contrasena" id="nombres" placeholder="Ingrese su Contrasena"></lu>
+          <button id="logb">Iniciar Sesion</button>
+          <h1 id="rec">Recuperar contrasena</h1>
+        </div>
+        </div>
+        </section>
+        <section>
+          <div class="misbalances">
+            <h1>Mis balances</h1>
+            <table class="tablab"> 
+              <thead>
+              <tr>
+                <th>#</th>          
+                <th>Espacio</th>         
+                <th>Fecha Inicio Alquiler</th>
+                <th>Fecha Fin Alquiler</th>
+                <th>Ganancia</th>
+              </tr>
+              </thead>
+              <tr>
+                <td>1</td>
+                <td>Apartamento</td>
+                <td>10/23/21</td>
+                <td>11/12/21</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Casa</td>
+                <td>10/23/21</td>
+                <td>11/12/21</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>                 
+        </div>  
+        </table>
+        <div class="balances">
+          <button class="buttonb" id="bot">Mis espacios</button>
+          <button class="buttonb" id="bot">Mis balances</button>
+      </div>
+
+                    
+        </section>
+      
+    </body>
+</html>
